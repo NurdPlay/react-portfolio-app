@@ -77,7 +77,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <ScrollToTop />
+        
         <div className="header-section">
           <Navbar
             className="navbar navbar-expand-md navbar-dark bg-dark"
@@ -184,16 +184,24 @@ function App() {
 
         {/* Skills Section */}
         <animated.div style={skillsAnimation} ref={skills} className="skills-section">
-          <Container className="container skill-container">
+        <Container className="container skill-container">
             <Row>
               <Col>
-                {/* Skills icons */}
+                <img src={skill1} alt="Html5-icon" />
+                <img src={skill2} alt="Html5-icon" />
+                <img src={skill3} alt="Html5-icon" />
+                <img src={skill4} alt="Html5-icon" />
+                <img src={skill5} alt="Html5-icon" />
               </Col>
               <Col>
                 <h3>Skills</h3>
               </Col>
               <Col>
-                {/* More skills icons */}
+                <img src={skill6} alt="Html5-icon" />
+                <img src={skill7} alt="Html5-icon" />
+                <img src={skill8} alt="Html5-icon" />
+                <img src={skill9} alt="Html5-icon" />
+                <img src={skill10} alt="Html5-icon" />
               </Col>
             </Row>
           </Container>
@@ -289,6 +297,7 @@ function App() {
           </Container>
         </footer>
       </div>
+      <ScrollToTop/>
     </Router>
   );
 }
