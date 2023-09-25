@@ -1,23 +1,33 @@
 /* Reset some default styles */
+
+.App {
+  background-color: black;
+}
+
 body,
 html {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  background-color: #333; /* Set a dark background color for the entire page */
+  color: white; /* Set text color to white */
 }
 
 /* Header Section Styles */
 .header-section {
-  background-color: #333;
-  padding: 20px 0;
+  padding: 1px 0;
+ ;
 }
 
 .navbar {
-  border: none;
+  border-bottom: 5px solid orange;
+  background-color: #4d4d4d; /* Update the navbar background color */
+  box-shadow: 5px 10px 50pt rgba(14, 216, 179, 0.673);
 }
 
 .navbar-brand-img {
-  max-height: 40px;
+  max-height: 100px;
+  display: flex;
 }
 
 .nav-link {
@@ -33,23 +43,31 @@ html {
 
 /* About Section Styles */
 .about-section {
-  background-color: #f9f9f9;
   padding: 60px 0;
+  background-color: #4d4d4d; /* Update the background color */
+  
+}
+
+.about-body{
+  background-color: black;
 }
 
 .about-card {
   border: none;
+  background-color: black;
+  box-shadow: 5px 3px 30px 25px rgba(14, 216, 179, 0.673);
+
 }
 
 .about-title {
   text-align: center;
-  color: #fff;
   font-size: 36px;
+  border-bottom: 1.8pt solid orange;
 }
 
 .about-subtitle {
   text-align: center;
-  color: #555;
+  color: #fff;
   font-size: 24px;
 }
 
@@ -61,23 +79,35 @@ html {
 
 /* Skills Section Styles */
 .skills-section {
-  background-color: #fff;
   padding: 60px 0;
+  background-color: #4d4d4d; /* Update the background color */
 }
 
 .skill-container {
+  width: 900px;
   text-align: center;
+  background-color: black;
+  border: 2pt solid orange;
+  padding: 12pt;
+  box-shadow: 5px 3px 30px 25px rgba(14, 216, 179, 0.673);
 }
 
 /* Education Section Styles */
+
+.education-container{
+  width: 750px;
+  background-color: black;
+  box-shadow: 5px 3px 30px 25px rgba(14, 216, 179, 0.673);
+
+}
+
 .education-section {
-  background-color: #f9f9f9;
   padding: 60px 0;
+  background-color: #4d4d4d;
 }
 
 .education-title {
   text-align: center;
-  color: #333;
   font-size: 36px;
 }
 
@@ -89,7 +119,12 @@ html {
 }
 
 .education-card {
-  border: none;
+  background-color: #333;
+  border: 2pt solid orange;
+  width: auto;
+  height: 360px;
+  margin: 15pt;
+  
 }
 
 .education-image {
@@ -102,28 +137,46 @@ html {
 }
 
 .card-text-black {
-  color: #555;
+  color: white;
 }
 
 /* Footer Section Styles */
 .site-footer {
-  background-color: #333;
   padding: 40px 0;
-  color: #fff;
+  color: white;
+  background-color: black; /* Update the background color */
 }
 
 .social-icon {
-  max-width: 30px;
+  max-width: 50px;
   margin-right: 20px;
+  color: white;
+}
+.profesional{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: 200px;
+  background-color: #4d4d4d;
+ }
+
+.social-icon-about {
+  max-width: 50px;
+  margin-right: 20px;
+  color: white;
+  background-color: #333;
+  
+  display: inline-block; /* Display icons inline */
+  vertical-align: middle; /* Align icons vertically */
 }
 
-.top-btn-position{
+.top-btn-position {
   position: inherit;
   bottom: 15px;
-  right: 20px
+  right: 20px;
 }
 
-.top-btn-style{
+.top-btn-style {
   height: 40px;
   width: 40px;
   border-radius: 2px solid #333;
