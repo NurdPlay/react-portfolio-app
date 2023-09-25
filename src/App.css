@@ -16,13 +16,14 @@ html {
 /* Header Section Styles */
 .header-section {
   padding: 1px 0;
- ;
+  background-color: #4d4d4d; 
 }
 
 .navbar {
   border-bottom: 5px solid orange;
   background-color: #4d4d4d; /* Update the navbar background color */
   box-shadow: 5px 10px 50pt rgba(14, 216, 179, 0.673);
+  margin-bottom: 100px;
 }
 
 .navbar-brand-img {

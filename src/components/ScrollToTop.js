@@ -24,6 +24,7 @@ function ScrollToTop() {
     <div>
       {scrollToTop && (
         <button
+          onClick={scrollUp}
           style={{
             position: 'fixed',
             bottom: '50px',
