@@ -1,38 +1,162 @@
-.App {
+/* Reset some default styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Section Styles */
+.header-section {
+  background-color: #333;
+  padding: 20px 0;
+}
+
+.navbar {
+  border: none;
+}
+
+.navbar-brand-img {
+  max-height: 40px;
+}
+
+.nav-link {
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* About Section Styles */
+.about-section {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+.about-card {
+  border: none;
+}
+
+.about-title {
+  text-align: center;
+  color: #fff;
+  font-size: 36px;
+}
+
+.about-subtitle {
+  text-align: center;
+  color: #555;
+  font-size: 24px;
+}
+
+.dev-icon {
+  max-width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Skills Section Styles */
+.skills-section {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+.skill-container {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Education Section Styles */
+.education-section {
+  background-color: #f9f9f9;
+  padding: 60px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.education-title {
+  text-align: center;
+  color: #333;
+  font-size: 36px;
+}
+
+.education-icon {
+  max-width: 60px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.education-card {
+  border: none;
+}
+
+.education-image {
+  width: 100px;
+  height: auto;
+}
+
+.card-title-black {
+  color: #333;
+}
+
+.card-text-black {
+  color: #555;
+}
+
+/* Footer Section Styles */
+.site-footer {
+  background-color: #333;
+  padding: 40px 0;
+  color: #fff;
+}
+
+.social-icon {
+  max-width: 30px;
+  margin-right: 20px;
+}
+
+.top-btn-position{
+  position: inherit;
+  bottom: 15px;
+  right: 20px
+}
+
+.top-btn-style{
+  height: 40px;
+  width: 40px;
+  border-radius: 2px solid #333;
+  border-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .nav-link {
+    margin-right: 10px;
+    font-size: 16px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .about-title {
+    font-size: 28px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .about-subtitle {
+    font-size: 20px;
+  }
+
+  .dev-icon {
+    max-width: 80px;
+  }
+
+  .education-title {
+    font-size: 28px;
+  }
+
+  .education-icon {
+    max-width: 40px;
+    margin-bottom: 10px;
   }
 }
