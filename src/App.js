@@ -70,14 +70,13 @@ function App() {
   });
 
   useEffect(() => {
-    // You don't need to call start() on react-spring animations.
-    // They automatically animate when you apply them to an element.
+  
   }, []);
 
   return (
     <Router>
       <div className="App">
-        
+        <ScrollToTop />
         <div className="header-section">
           <Navbar
             className="navbar navbar-expand-md navbar-dark bg-dark"
@@ -297,7 +296,6 @@ function App() {
           </Container>
         </footer>
       </div>
-      <ScrollToTop/>
     </Router>
   );
 }

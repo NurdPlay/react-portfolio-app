@@ -16,14 +16,13 @@ html {
 /* Header Section Styles */
 .header-section {
   padding: 1px 0;
-  background-color: #4d4d4d; 
+  background-color: #4d4d4d;
 }
 
 .navbar {
   border-bottom: 5px solid orange;
   background-color: #4d4d4d; /* Update the navbar background color */
   box-shadow: 5px 10px 50pt rgba(14, 216, 179, 0.673);
-  margin-bottom: 100px;
 }
 
 .navbar-brand-img {
@@ -45,25 +44,26 @@ html {
 /* About Section Styles */
 .about-section {
   padding: 60px 0;
-  background-color: #4d4d4d; /* Update the background color */
-  
+  background-color: #4d4d4d;
 }
 
-.about-body{
+.about-body {
   background-color: black;
+ 
 }
 
 .about-card {
   border: none;
   background-color: black;
   box-shadow: 5px 3px 30px 25px rgba(14, 216, 179, 0.673);
-
+  margin-top: 100px;
+   border: 2pt solid orange;
 }
 
 .about-title {
   text-align: center;
   font-size: 36px;
-  border-bottom: 1.8pt solid orange;
+  border-bottom: 1.8pt double rgba(87, 166, 208, 0.768);
 }
 
 .about-subtitle {
@@ -76,6 +76,8 @@ html {
   max-width: 100px;
   display: block;
   margin: 0 auto;
+  border: 1.88pt solid;
+  border-radius: 100%;
 }
 
 /* Skills Section Styles */
@@ -89,17 +91,20 @@ html {
   text-align: center;
   background-color: black;
   border: 2pt solid orange;
-  padding: 12pt;
+  padding: 4%;
   box-shadow: 5px 3px 30px 25px rgba(14, 216, 179, 0.673);
+  margin-top: 10px;
 }
 
 /* Education Section Styles */
 
-.education-container{
+.education-container {
   width: 750px;
   background-color: black;
   box-shadow: 5px 3px 30px 25px rgba(14, 216, 179, 0.673);
-
+  border: 3pt solid orange;
+  padding: 2%;
+  margin-top: 20px;
 }
 
 .education-section {
@@ -121,11 +126,10 @@ html {
 
 .education-card {
   background-color: #333;
-  border: 2pt solid orange;
+  border: 2pt solid rgb(117, 186, 238);
   width: auto;
   height: 360px;
   margin: 15pt;
-  
 }
 
 .education-image {
@@ -145,7 +149,7 @@ html {
 .site-footer {
   padding: 40px 0;
   color: white;
-  background-color: black; /* Update the background color */
+  background-color: black; 
 }
 
 .social-icon {
@@ -153,20 +157,22 @@ html {
   margin-right: 20px;
   color: white;
 }
-.profesional{
+.profesional {
   display: flex;
   justify-content: center;
   width: auto;
   height: 200px;
   background-color: #4d4d4d;
- }
+}
 
 .social-icon-about {
-  max-width: 50px;
+  max-width: 80px;
   margin-right: 20px;
   color: white;
   background-color: #333;
-  
+  border: 2pt solid rgb(213, 166, 79);
+  box-shadow: 3px 1px 20px 10px rgba(14, 216, 179, 0.673);
+  margin-top: 30px;
   display: inline-block; /* Display icons inline */
   vertical-align: middle; /* Align icons vertically */
 }
@@ -187,7 +193,24 @@ html {
 }
 
 /* Media Queries for Mobile Responsiveness */
+@media (max-width: 1200px) {
+  /* Adjust styles for large screens */
+  .navbar {
+    margin-bottom: 50px;
+  }
+  /* Add more styles for large screens as needed */
+}
+
+@media (max-width: 992px) {
+  /* Adjust styles for medium screens */
+  .navbar {
+    margin-bottom: 30px;
+  }
+  /* Add more styles for medium screens as needed */
+}
+
 @media (max-width: 768px) {
+  /* Adjust styles for small screens */
   .nav-link {
     margin-right: 10px;
     font-size: 16px;
@@ -214,3 +237,21 @@ html {
     margin-bottom: 10px;
   }
 }
+
+@media (max-width: 576px) {
+  /* Adjust styles for mobile screens */
+  .nav-link {
+    margin-right: 5px;
+    font-size: 14px;
+  }
+
+  .about-title {
+    font-size: 24px;
+  }
+
+  .about-subtitle {
+    font-size: 18px;
+  }
+
+}
+
