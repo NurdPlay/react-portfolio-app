@@ -20,6 +20,7 @@ import {
   CardTitle,
 } from "reactstrap";
 import { useSpring, animated } from "react-spring";
+import ContactForm from "./components/ContactForm"
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import MyLogo from "./images/logo.png";
@@ -39,12 +40,13 @@ import IULogo from "./images/IULogo.png";
 import EducationImg from "./images/education.png";
 import githubIcon from "./images/008-github.png";
 import linkedinIcon from "./images/010-linkedin.png";
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTop from "./utils/ScrollToTop";
 
 function App() {
   const about = useRef(null);
   const skills = useRef(null);
   const education = useRef(null);
+  const contact = useRef(null);
 
   const scrollTOSection = (elementRef) => {
     window.scrollTo({
@@ -122,7 +124,11 @@ function App() {
                     </Link>
                   </NavItem>
                   <NavItem>
-                    <Link to="/contact" className="nav-link">
+                    <Link 
+                      to="/contact"
+                      className="nav-link"
+                      onClick={() => scrollTOSection(contact)}  
+                    >
                       <i className="fa fa-envelope fa-lg" /> Contact
                     </Link>
                   </NavItem>
@@ -253,6 +259,12 @@ function App() {
               </Col>
             </Row>
           </Container>
+        </animated.div>
+        
+        {/* Contact */}
+
+        <animated.div style={aboutAnimation} ref={contact} className="contact-section">
+            <ContactForm />
         </animated.div>
 
         {/* Footer */}
