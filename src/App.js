@@ -9,30 +9,22 @@ import {
   Nav,
   NavItem,
 } from "reactstrap";
-import {
-  Col,
-  Container,
-  Row,
-  Card,
-  CardBody,
-  CardText,
-  CardTitle,
-} from "reactstrap";
+import { Col, Container, Row } from "reactstrap";
 import { useSpring, animated } from "react-spring";
 import ContactForm from "./components/ContactForm"
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import MyLogo from "./images/logo.png";
 
-import Nucamp from "./images/NucampLogo.png";
-import IULogo from "./images/IULogo.png";
-import EducationImg from "./images/education.png";
 import githubIcon from "./images/008-github.png";
 import linkedinIcon from "./images/010-linkedin.png";
 import ScrollToTop from "./utils/ScrollToTop";
 import About from "./features/About";
 import Profesional from "./components/Profesional";
 import Skills from "./features/Skills";
+import Education from "./features/Education";
+
+
 function App() {
   const about = useRef(null);
   const skills = useRef(null);
@@ -146,51 +138,7 @@ function App() {
 
         {/* Education Section */}
         <animated.div style={educationAnimation} ref={education} className="education-section">
-          <Container className="Container education-container">
-            <Row>
-              <Col>
-                <h3 className="education-title">Education</h3>
-                <img
-                  className="education-icon"
-                  src={EducationImg}
-                  alt="Education"
-                />
-              </Col>
-            </Row>
-
-            <Row>
-              <Col sm="6">
-                <Card className="education-card">
-                  <img
-                    className="education-image"
-                    src={Nucamp}
-                    alt="Nucamp Logo"
-                  />
-                  <CardBody>
-                    <CardTitle tag="h5" className="card-title-black">
-                      Nucamp Developer Bootcamp
-                    </CardTitle>
-                    <CardText className="card-text-black">
-                      A comprehensive bootcamp covering web development technologies.
-                    </CardText>
-                  </CardBody>
-                </Card>
-              </Col>
-              <Col sm="6">
-                <Card className="education-card">
-                  <img className="education-image" src={IULogo} alt="IU Logo" />
-                  <CardBody>
-                    <CardTitle tag="h5" className="card-title-black">
-                      Independence University: Computer Science
-                    </CardTitle>
-                    <CardText className="card-text-black">
-                      Pursued a degree in Computer Science with a focus on software development.
-                    </CardText>
-                  </CardBody>
-                </Card>
-              </Col>
-            </Row>
-          </Container>
+          <Education />
         </animated.div>
         
         {/* Contact */}
