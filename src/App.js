@@ -33,7 +33,6 @@ import skill6 from "./images/006-database-storage.png";
 import skill8 from "./images/003-ux.png";
 import skill7 from "./images/git.png";
 import skill9 from "./images/008-github.png";
-import DevIcon from "./images/001-coding.png";
 import skill10 from "./images/005-c.png";
 import Nucamp from "./images/NucampLogo.png";
 import IULogo from "./images/IULogo.png";
@@ -41,6 +40,7 @@ import EducationImg from "./images/education.png";
 import githubIcon from "./images/008-github.png";
 import linkedinIcon from "./images/010-linkedin.png";
 import ScrollToTop from "./utils/ScrollToTop";
+import About from "./features/About";
 
 function App() {
   const about = useRef(null);
@@ -140,29 +140,7 @@ function App() {
 
         {/* Animated about section */}
         <animated.div style={aboutAnimation} ref={about} className="about-section">
-          <Container className="AboutCardContainer">
-            <Row className="justify-content-center">
-              <Col sm="6" className="mx-auto">
-                <Card className="about-card">
-                  <CardHeader className="bg-dark text-white">
-                    <h1 className="about-title">John Elliott</h1>
-                  </CardHeader>
-                  <CardBody className="about-body">
-                    <Row className="justify-content-center mb-3">
-                      <img
-                        src={DevIcon}
-                        alt="Developer Icon"
-                        className="dev-icon"
-                      />
-                    </Row>
-                    <Row className="justify-content-center">
-                      <h3 className="about-subtitle">Fullstack Developer</h3>
-                    </Row>
-                  </CardBody>
-                </Card>
-              </Col>
-            </Row>
-          </Container>
+          <About />
         </animated.div>
 
         {/* Profesional */}
