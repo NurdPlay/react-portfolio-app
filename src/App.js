@@ -23,16 +23,7 @@ import ContactForm from "./components/ContactForm"
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import MyLogo from "./images/logo.png";
-import skill1 from "./images/001-html.png";
-import skill2 from "./images/002-css-3.png";
-import skill3 from "./images/004-bootstrap.png";
-import skill4 from "./images/003-java-script.png";
-import skill5 from "./images/005-react.png";
-import skill6 from "./images/006-database-storage.png";
-import skill8 from "./images/003-ux.png";
-import skill7 from "./images/git.png";
-import skill9 from "./images/008-github.png";
-import skill10 from "./images/005-c.png";
+
 import Nucamp from "./images/NucampLogo.png";
 import IULogo from "./images/IULogo.png";
 import EducationImg from "./images/education.png";
@@ -41,7 +32,7 @@ import linkedinIcon from "./images/010-linkedin.png";
 import ScrollToTop from "./utils/ScrollToTop";
 import About from "./features/About";
 import Profesional from "./components/Profesional";
-
+import Skills from "./features/Skills";
 function App() {
   const about = useRef(null);
   const skills = useRef(null);
@@ -150,27 +141,7 @@ function App() {
 
         {/* Skills Section */}
         <animated.div style={skillsAnimation} ref={skills} className="skills-section">
-        <Container className="container skill-container">
-            <Row>
-              <Col>
-                <img src={skill1} alt="Html5-icon" />
-                <img src={skill2} alt="Html5-icon" />
-                <img src={skill3} alt="Html5-icon" />
-                <img src={skill4} alt="Html5-icon" />
-                <img src={skill5} alt="Html5-icon" />
-              </Col>
-              <Col>
-                <h3>Skills</h3>
-              </Col>
-              <Col>
-                <img src={skill6} alt="Html5-icon" />
-                <img src={skill7} alt="Html5-icon" />
-                <img src={skill8} alt="Html5-icon" />
-                <img src={skill9} alt="Html5-icon" />
-                <img src={skill10} alt="Html5-icon" />
-              </Col>
-            </Row>
-          </Container>
+          <Skills />
         </animated.div>
 
         {/* Education Section */}
