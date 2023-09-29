@@ -15,7 +15,6 @@ import {
   Row,
   Card,
   CardBody,
-  CardHeader,
   CardText,
   CardTitle,
 } from "reactstrap";
@@ -41,6 +40,7 @@ import githubIcon from "./images/008-github.png";
 import linkedinIcon from "./images/010-linkedin.png";
 import ScrollToTop from "./utils/ScrollToTop";
 import About from "./features/About";
+import Profesional from "./components/Profesional";
 
 function App() {
   const about = useRef(null);
@@ -145,24 +145,7 @@ function App() {
 
         {/* Profesional */}
         <animated.div className="profesional">
-          <a
-            href="https://github.com/NurdPlay"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={githubIcon} alt="GitHub" className="social-icon-about" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/john-elliott-0a13a31b1/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src={linkedinIcon}
-              alt="LinkedIn"
-              className="social-icon-about"
-            />
-          </a>
+          <Profesional />
         </animated.div>
 
         {/* Skills Section */}
