@@ -17,7 +17,7 @@ import MyLogo from "./images/logo.png";
 
 import ScrollToTop from "./utils/ScrollToTop";
 import About from "./features/About";
-import Profesional from "./components/Profesional";
+import Professional from "./components/Professional";
 import Skills from "./features/Skills";
 import Education from "./features/Education";
 import Footer from "./components/Footer";
@@ -124,9 +124,9 @@ function App() {
           <About />
         </animated.div>
 
-        {/* Profesional */}
-        <animated.div className="profesional">
-          <Profesional />
+        {/* Professional */}
+        <animated.div className="professional">
+          <Professional />
         </animated.div>
 
         {/* Skills Section */}

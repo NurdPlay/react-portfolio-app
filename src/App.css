@@ -23,6 +23,7 @@ html {
   border-bottom: 5px solid orange;
   background-color: #4d4d4d; /* Update the navbar background color */
   box-shadow: 5px 10px 50pt rgba(14, 216, 179, 0.673);
+  padding: 50px
 }
 
 .navbar-brand-img {
@@ -78,6 +79,33 @@ html {
   margin: 0 auto;
   border: 1.88pt solid;
   border-radius: 100%;
+  padding: 5px;
+  margin-bottom: 50px;
+}
+
+.professional{
+  display: flex;
+  justify-content: center;
+  background-color: #4d4d4d;
+}
+
+.professional-links{
+  display: flex;
+  justify-content: center;
+    
+}
+.professional-title{
+  text-align: center;
+}
+
+.professional-container{
+  background-color: black;
+  border: solid 2pt orange;
+  box-shadow: 5px 3px 30px 25px rgba(14, 216, 179, 0.673);  
+  padding: 25px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  width: 450px;
 }
 
 /* Skills Section Styles */
@@ -185,21 +213,11 @@ html {
   margin-right: 20px;
   color: white;
 }
-.profesional {
-  display: flex;
-  justify-content: center;
-  width: auto;
-  height: 200px;
-  background-color: #4d4d4d;
-}
 
 .social-icon-about {
   max-width: 80px;
   margin-right: 20px;
   color: white;
-  background-color: #333;
-  border: 2pt solid rgb(213, 166, 79);
-  box-shadow: 3px 1px 20px 10px rgba(14, 216, 179, 0.673);
   margin-top: 70px;
   display: inline-block; /* Display icons inline */
   vertical-align: middle; /* Align icons vertically */
